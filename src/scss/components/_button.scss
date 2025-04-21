@@ -1,0 +1,36 @@
+
+
+
+.button-group {
+    display: flex;
+    gap: 15px; 
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+    &_demo {
+      background-color: transparent;
+      border: 2px solid white;
+      color: white;
+      
+      &:hover {
+       
+        color:  #398378;
+      }
+    }
+
+    &_sign {
+        background-color: #398378;
+        color: white;
+        border: none;
+        
+        &:hover {
+          background-color:#306c63;
+        }
+      }
+    }

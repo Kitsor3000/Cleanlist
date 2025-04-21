@@ -1,0 +1,7 @@
+// Основні стилі
+@use '../scss/block/header' as *;
+@use '../scss/block/main.scss';
+@use '../scss/config/variables'  as *;
+@use '../scss/block/nav-list' as *; 
+@use '../scss/block/promo' as *; 
+@use '../scss/components/button' as *; 

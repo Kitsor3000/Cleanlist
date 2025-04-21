@@ -1,0 +1,20 @@
+.nav-list {
+    
+    display: flex;
+    list-style: none;
+    margin-left: 120px; 
+
+
+    &_item{
+        margin-right: 30px;
+        display: inline-block;
+    }
+
+    &_link{
+        font-size: 14px;
+        line-height: 18px;
+        color: #FFF;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+}

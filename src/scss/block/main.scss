@@ -1,0 +1,7 @@
+@use '../config/variables' as *; 
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $color-fon;
+  }
