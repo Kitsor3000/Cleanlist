@@ -6,14 +6,19 @@ const uglify = require('gulp-uglify');
 const concat = require('gulp-concat');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
+const rename = require('gulp-rename'); // Додано відсутній модуль
 
 // Шляхи до файлів
 const paths = {
   src: {
-    scss: 'src/scss/styles.scss' // Тільки головний файл
+    html: 'src/**/*.html', // Додано шлях для HTML
+    scss: 'src/scss/styles.scss',
+    js: 'src/js/**/*.js' // Додано шлях для JS
   },
   build: {
-    css: 'build/css/'
+    html: 'build/',
+    css: 'build/css/',
+    js: 'build/js/'
   }
 };
 
@@ -31,7 +36,7 @@ function html() {
 // Обробка JavaScript
 function js() {
   return gulp.src(paths.src.js)
-    .pipe(concat('app.js')) // Тільки один JS файл
+    .pipe(concat('app.js'))
     .pipe(uglify())
     .pipe(gulp.dest(paths.build.js))
     .pipe(browserSync.stream());
@@ -42,9 +47,14 @@ function css() {
   return gulp.src(paths.src.scss)
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([autoprefixer()]))
-    .pipe(rename('styles.css')) // Чітко вказуємо ім'я файлу
+    .pipe(rename('styles.min.css')) // Мініфікована версія
     .pipe(gulp.dest(paths.build.css))
-    
+    .pipe(browserSync.stream()); // Додано оновлення браузера
+}
+
+// Завдання для побудови без запуску сервера
+function build() {
+  return gulp.series(html, css, js);
 }
 
 // Спостереження за змінами
@@ -61,11 +71,15 @@ function watch() {
     notify: false
   });
 
-  gulp.watch('src/scss/**/*.scss', css);
+  gulp.watch(paths.src.scss, css);
   gulp.watch(paths.src.html, html);
   gulp.watch(paths.src.js, js);
 }
 
-// Основні задачі
-
+// Експорт завдань
+exports.html = html;
+exports.js = js;
+exports.css = css;
+exports.build = build;
+exports.watch = watch;
 exports.default = gulp.series(html, css, js, watch);

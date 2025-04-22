@@ -1,7 +1,41 @@
+
+
 .hero{
     padding-top: 138px;
     padding-bottom: 175px;
     background-image: url("../img/BG.png"), url("../img/1.png");
     background-repeat: no-repeat, no-repeat;
     background-position: top -145px right 0px, top 20px right 20px left 230px;
+
+
+    &_title{
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        color:#fff
+    }
+
+    &_description{
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 30px;
+        max-width: 600px;
+        color:#fff
+    }
+      
+      .btn_hero {
+        background-color: #000;
+        color: #fff;
+        padding: 12px 30px;
+        font-size: 16px;
+        font-family: 'Jost', sans-serif;
+      }
+
+      .btn_hero::after {
+        content: "→";
+        margin-left: 5px;
+      }
+
 }
