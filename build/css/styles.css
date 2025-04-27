@@ -1,2 +1,187 @@
-.header{padding:30px 135px}.header_container{display:flex;justify-content:space-between;align-items:center;z-index:1000;padding:0 20px}body{margin:0;padding:0;background-color:#202222}.nav-list{display:flex;list-style:none;margin-left:120px}.nav-list_item{margin-right:30px;display:inline-block}.nav-list_link{font-size:14px;line-height:18px;color:#fff;text-transform:uppercase;text-decoration:none}.hero{padding-top:138px;padding-bottom:175px;background-image:url(../img/BG.png),url(../img/1.png);background-repeat:no-repeat,no-repeat;background-position:top -145px right 0,top 20px right 20px left 230px}.button-group{display:flex;gap:15px}.btn{padding:10px 20px;border-radius:10px;font-weight:500;cursor:pointer;transition:all .3s ease}.btn_demo{background-color:transparent;border:2px solid #fff;color:#fff}.btn_demo:hover{color:#398378}.btn_sign{background-color:#398378;color:#fff;border:none}.btn_sign:hover{background-color:#306c63}
-/*# sourceMappingURL=styles.css.map */
+@charset "UTF-8";
+.header {
+  width: 100%;
+  max-width: 1440px;
+  height: 104px;
+}
+.header_nav {
+  position: absolute;
+  left: 550px;
+}
+.header_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+body {
+  margin: 0;
+  padding: 0 135px;
+  background-color: #202222;
+  font-family: "Jost", sans-serif;
+  color: #fff;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.nav-list {
+  gap: 40px;
+  display: flex;
+  list-style: none;
+  margin-left: 120px;
+}
+.nav-list_item {
+  margin-right: 30px;
+  display: inline-block;
+}
+.nav-list_link {
+  font-family: Jost;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0%;
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  width: 100%;
+  max-width: 1440px;
+  height: 691px;
+}
+.hero_foto {
+  position: absolute;
+  height: 791px;
+  width: 802px;
+  right: 0px;
+  background-image: url("../img/BG.png");
+  background-repeat: no-repeat;
+  background-size: 802px 791px;
+  z-index: -1000;
+}
+.hero_foto2 {
+  position: absolute;
+  height: 327px;
+  width: 569px;
+  right: 135px;
+  top: 291px;
+  background-image: url("../img/1.png");
+  background-repeat: no-repeat;
+  background-size: 569px 327px;
+  z-index: -100;
+}
+.hero .container {
+  position: absolute;
+  top: 235px;
+  left: 135px;
+}
+.hero .green-dash-line {
+  display: inline-block;
+  width: 40px;
+  height: 9px;
+  background-color: #398378;
+  vertical-align: middle;
+}
+.hero_title {
+  width: 530px;
+  height: 229px;
+  padding: 0px;
+  margin: 0px;
+  font-family: Jost;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0px;
+  color: #fbfafa;
+}
+.hero_description {
+  width: 530px;
+  height: 96px;
+  font-family: Jost;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  color: #fdfffd;
+}
+.hero .btn_hero {
+  background-color: #000;
+  color: #fff;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-family: "Jost", sans-serif;
+}
+.hero .btn_hero::after {
+  content: "→";
+  margin-left: 5px;
+}
+
+.button-group {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn_demo {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+.btn_demo:hover {
+  color: #398378;
+}
+.btn_sign {
+  background-color: #398378;
+  color: white;
+  border: none;
+}
+.btn_sign:hover {
+  background-color: #306c63;
+}
+
+.custom-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content; /* Hug content (аналог 80px в Figma) */
+  min-width: 80px; /* Мінімальна ширина як у Figma */
+  height: fit-content; /* Hug content (аналог 27px в Figma) */
+  min-height: 27px; /* Мінімальна висота як у Figma */
+  background-color: #398378; /* Primary Color */
+  border-radius: 20px; /* Radius */
+  padding: 5px 10px; /* Top/Bottom: 5px, Left/Right: 10px */
+  gap: 10px; /* Gap між елементами всередині */
+  color: white; /* Припускаючи, що текст білий */
+  font-family: sans-serif; /* Базовий шрифт */
+  font-size: 14px; /* Припущення для розміру тексту */
+  border: none; /* Без рамки */
+  cursor: pointer; /* Курсор-покажчик */
+}
+
+/* Стиль при наведенні для кращого UX */
+.custom-button:hover {
+  opacity: 0.9;
+}
+
+.Integration {
+  width: 100%;
+  max-width: 1440px;
+  height: 427px;
+}
+.Integration_content {
+  width: 100%;
+  max-width: 1170px;
+  height: 227px;
+}

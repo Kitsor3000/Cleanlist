@@ -4,18 +4,16 @@ const include_file = require('gulp-file-include');
 const browserSync = require('browser-sync').create();
 const uglify = require('gulp-uglify');
 const concat = require('gulp-concat');
-const postcss = require('gulp-postcss');
-const autoprefixer = require('autoprefixer');
-const rename = require('gulp-rename'); // Додано відсутній модуль
 
-// Шляхи до файлів
+
+
 const paths = {
   src: {
-    html: 'src/**/*.html', // Додано шлях для HTML
+    html: 'src/**/*.html', 
     scss: 'src/scss/styles.scss',
-    js: 'src/js/**/*.js' // Додано шлях для JS
+    js: 'src/js/**/*.js' 
   },
-  build: {
+  build: { 
     html: 'build/',
     css: 'build/css/',
     js: 'build/js/'
@@ -42,15 +40,26 @@ function js() {
     .pipe(browserSync.stream());
 }
 
-// Обробка SCSS/CSS
-function css() {
-  return gulp.src(paths.src.scss)
-    .pipe(sass().on('error', sass.logError))
-    .pipe(postcss([autoprefixer()]))
-    .pipe(rename('styles.min.css')) // Мініфікована версія
-    .pipe(gulp.dest(paths.build.css))
-    .pipe(browserSync.stream()); // Додано оновлення браузера
+
+function css(cb) {
+  return gulp.src('src/scss/**/*.scss') // Gets all files ending with .scss in src/scss and children dirs
+      .pipe(sass().on('error', sass.logError)) // Passes it through a gulp-sass, log errors to console
+      .pipe(gulp.dest('build/css')) // Outputs it in the css folder
+  ;
 }
+
+
+gulp.task('sass', function() {
+  return gulp.src('src/scss/**/*.scss')
+    .pipe(sass().on('error', sass.logError)) 
+    .pipe(gulp.dest('build/css'))  
+    .pipe(browserSync.stream());  
+});
+
+gulp.task('watch', function() {
+  gulp.watch('src/scss/**/*.scss', gulp.series('sass'));
+  gulp.watch('*.html').on('change', browserSync.reload);
+});
 
 // Завдання для побудови без запуску сервера
 function build() {

@@ -34,3 +34,29 @@
         }
       }
     }
+
+
+
+    .custom-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: fit-content; /* Hug content (аналог 80px в Figma) */
+      min-width: 80px; /* Мінімальна ширина як у Figma */
+      height: fit-content; /* Hug content (аналог 27px в Figma) */
+      min-height: 27px; /* Мінімальна висота як у Figma */
+      background-color: #398378; /* Primary Color */
+      border-radius: 20px; /* Radius */
+      padding: 5px 10px; /* Top/Bottom: 5px, Left/Right: 10px */
+      gap: 10px; /* Gap між елементами всередині */
+      color: white; /* Припускаючи, що текст білий */
+      font-family: sans-serif; /* Базовий шрифт */
+      font-size: 14px; /* Припущення для розміру тексту */
+      border: none; /* Без рамки */
+      cursor: pointer; /* Курсор-покажчик */
+  }
+  
+  /* Стиль при наведенні для кращого UX */
+  .custom-button:hover {
+      opacity: 0.9;
+  }

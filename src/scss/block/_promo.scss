@@ -1,28 +1,84 @@
 
 
 .hero{
-    padding-top: 138px;
-    padding-bottom: 175px;
-    background-image: url("../img/BG.png"), url("../img/1.png");
-    background-repeat: no-repeat, no-repeat;
-    background-position: top -145px right 0px, top 20px right 20px left 230px;
+
+  width: 100%;
+  max-width: 1440px;
+    height: 691px;
+    
+ 
+    
+  &_foto{
+
+    position: absolute;
+    height: 791px;
+    width: 802px;
+    right: 0px;
+    background-image: url("../img/BG.png");
+      background-repeat: no-repeat;
+      background-size: 802px 791px;
+      
+    z-index: -1000;
+
+  }
+
+&_foto2{
+
+  position: absolute;
+  height: 327px;
+  width: 569px;
+  right: 135px ;
+  top: 291px;
+  background-image: url("../img/1.png");
+  background-repeat: no-repeat;
+      background-size: 569px 327px;
+      z-index: -100;
+ 
+}
+
+
+
+  .container{
+
+   position: absolute;
+    top: 235px;
+    left: 135px;
+
+  }
+
+
+  .green-dash-line {
+    display: inline-block;
+    width: 40px; 
+    height: 9px; 
+    background-color: #398378; 
+    vertical-align: middle; 
+  }
 
 
     &_title{
-        font-size: 48px;
-        font-weight: 700;
-        line-height: 1.2;
-        margin-bottom: 20px;
-        text-transform: uppercase;
-        color:#fff
+      width: 530px;
+      height: 229px;
+      padding: 0px;
+      margin: 0px;
+      font-family: Jost;
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 64px;
+      letter-spacing: 0px;
+        color:#fbfafa
     }
 
     &_description{
-        font-size: 18px;
-        line-height: 1.5;
-        margin-bottom: 30px;
-        max-width: 600px;
-        color:#fff
+      width: 530px;
+      height: 96px;
+     
+      font-family: Jost;
+font-weight: 400;
+font-size: 20px;
+line-height: 32px;
+letter-spacing: 0px;
+        color:#fdfffd
     }
       
       .btn_hero {

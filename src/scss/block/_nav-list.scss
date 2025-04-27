@@ -1,5 +1,6 @@
 .nav-list {
     
+    gap: 40px;
     display: flex;
     list-style: none;
     margin-left: 120px; 
@@ -11,10 +12,14 @@
     }
 
     &_link{
-        font-size: 14px;
-        line-height: 18px;
-        color: #FFF;
-        text-transform: uppercase;
-        text-decoration: none;
+
+    font-family: Jost;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    color: #fff;
+    text-decoration: none;
+
     }
 }

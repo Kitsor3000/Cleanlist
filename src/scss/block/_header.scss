@@ -1,14 +1,25 @@
 .header {
 
-    padding: 30px 135px;
+    width: 100%;
+    max-width: 1440px;
+        height: 104px;
+       
+
+    &_nav{
+
+        position: absolute;
+        left: 550px;
+    }
 
     &_container {
 
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%; 
         z-index: 1000;
-        padding: 0 20px;
+       
     }
 
 }
