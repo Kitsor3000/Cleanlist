@@ -4,15 +4,62 @@
     width: 100%;
   max-width: 1440px;
     height: 427px;
-
+   
     &_content{
-        width: 100%;
-  max-width: 1170px;
+        
+    width: 1170px;
     height: 227px;
+    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
 
     }
 
+    &_title{
+      
+      padding: 0px 40px;
+      font-family: Inter;
+font-weight: 700;
+font-size: 40px;
+line-height: 50px;
+letter-spacing: 0px;
+text-align: center;
+vertical-align: middle;
 
+        color:#fbfafa
+    }
+
+
+
+    .icon-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; 
+      flex-direction: column;
+      gap: 184px; 
+      width: 100%;
+      max-width: 1170px; 
+      height: 80px;
+      
+    
+    }
+    
+    .provider-item {
+      display: flex;
+      flex: 1;
+            align-items: center;
+      flex-direction: column;
+      
+  }
+
+    .icon-item {
+      
+      color: #fff;
+    }
 
 
 

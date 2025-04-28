@@ -19,7 +19,6 @@
 
 body {
   margin: 0;
-  padding: 0 135px;
   background-color: #202222;
   font-family: "Jost", sans-serif;
   color: #fff;
@@ -28,6 +27,7 @@ body {
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 0 135px;
 }
 
 .nav-list {
@@ -181,7 +181,40 @@ body {
   height: 427px;
 }
 .Integration_content {
+  width: 1170px;
+  height: 227px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Integration_title {
+  padding: 0px 40px;
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0px;
+  text-align: center;
+  vertical-align: middle;
+  color: #fbfafa;
+}
+.Integration .icon-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 184px;
   width: 100%;
   max-width: 1170px;
-  height: 227px;
+  height: 80px;
+}
+.Integration .provider-item {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  flex-direction: column;
+}
+.Integration .icon-item {
+  color: #fff;
 }
