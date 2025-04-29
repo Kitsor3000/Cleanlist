@@ -1,0 +1,66 @@
+
+.Features{
+  margin: 0 135px;
+  position: relative;
+    width: 100%;
+  max-width: 1305px;
+    height: 870px;
+gap: 30px;
+
+
+    
+    
+    
+    .containerf{
+
+      position: absolute;
+       width: 370px;
+        height: 282px;
+        gap: 10px;
+   
+     }
+   
+   
+    
+   
+       &_title{
+
+        font-family: Jost;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+        letter-spacing: 0px;
+        color: #fff ;
+        
+       }
+   
+       &_description{
+
+        width: 370;
+height: 55;
+        font-family: Jost;
+font-weight: 400;
+font-size: 20px;
+line-height: 32.04px;
+letter-spacing: 0%;
+vertical-align: middle;
+        color:#fff;
+
+       }
+         
+         
+   
+        
+   
+   }
+    
+
+    
+
+
+
+
+    
+
+
+

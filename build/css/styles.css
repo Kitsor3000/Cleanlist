@@ -1,8 +1,9 @@
 @charset "UTF-8";
 .header {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1170px;
   height: 104px;
+  margin: 0 135px;
 }
 .header_nav {
   position: absolute;
@@ -18,16 +19,12 @@
 }
 
 body {
-  margin: 0;
   background-color: #202222;
   font-family: "Jost", sans-serif;
-  color: #fff;
 }
 
 .wrapper {
   max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 135px;
 }
 
 .nav-list {
@@ -52,8 +49,9 @@ body {
 
 .hero {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1305px;
   height: 691px;
+  margin: 0 135px;
 }
 .hero_foto {
   position: absolute;
@@ -155,37 +153,36 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: fit-content; /* Hug content (аналог 80px в Figma) */
-  min-width: 80px; /* Мінімальна ширина як у Figma */
-  height: fit-content; /* Hug content (аналог 27px в Figma) */
-  min-height: 27px; /* Мінімальна висота як у Figma */
-  background-color: #398378; /* Primary Color */
-  border-radius: 20px; /* Radius */
-  padding: 5px 10px; /* Top/Bottom: 5px, Left/Right: 10px */
-  gap: 10px; /* Gap між елементами всередині */
-  color: white; /* Припускаючи, що текст білий */
-  font-family: sans-serif; /* Базовий шрифт */
-  font-size: 14px; /* Припущення для розміру тексту */
-  border: none; /* Без рамки */
-  cursor: pointer; /* Курсор-покажчик */
+  width: fit-content;
+  min-width: 80px;
+  height: fit-content;
+  min-height: 27px;
+  background-color: #398378;
+  border-radius: 20px;
+  padding: 5px 10px;
+  gap: 10px;
+  color: white;
+  font-family: sans-serif;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
 }
 
-/* Стиль при наведенні для кращого UX */
 .custom-button:hover {
   opacity: 0.9;
 }
 
 .Integration {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1305px;
   height: 427px;
+  margin: 0 135px;
 }
 .Integration_content {
+  display: flex;
   width: 1170px;
   height: 227px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
   align-items: center;
 }
 .Integration_title {
@@ -197,24 +194,55 @@ body {
   letter-spacing: 0px;
   text-align: center;
   vertical-align: middle;
-  color: #fbfafa;
+  color: #fff;
 }
 .Integration .icon-container {
+  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  flex-direction: column;
-  gap: 184px;
+  gap: 84px;
   width: 100%;
   max-width: 1170px;
   height: 80px;
 }
 .Integration .provider-item {
-  display: flex;
+  flex: 0 0 auto;
   flex: 1;
-  align-items: center;
-  flex-direction: column;
+  text-align: center;
 }
-.Integration .icon-item {
+
+.Features {
+  margin: 0 135px;
+  position: relative;
+  width: 100%;
+  max-width: 1305px;
+  height: 870px;
+  gap: 30px;
+}
+.Features .containerf {
+  position: absolute;
+  width: 370px;
+  height: 282px;
+  gap: 10px;
+}
+.Features_title {
+  font-family: Jost;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0px;
+  color: #fff;
+}
+.Features_description {
+  width: 370;
+  height: 55;
+  font-family: Jost;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32.04px;
+  letter-spacing: 0%;
+  vertical-align: middle;
   color: #fff;
 }
