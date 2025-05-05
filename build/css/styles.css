@@ -149,6 +149,22 @@ body {
 .btn_sign:hover {
   background-color: #306c63;
 }
+.btn_pr {
+  background-color: #398378;
+  color: white;
+  border: none;
+  width: 121px;
+  height: 46px;
+  gap: 16px;
+  padding-top: 14px;
+  padding-right: 20px;
+  padding-bottom: 14px;
+  padding-left: 20px;
+  border-radius: 8px;
+}
+.btn:hover {
+  border: 2px solid white;
+}
 
 .custom-button {
   display: inline-flex;
@@ -333,8 +349,7 @@ body {
   position: absolute;
   width: 100%;
   max-width: 1250px;
-  height: 1036px;
-  /* Заголовок тарифу */
+  height: 800px;
   /* Список функцій */
   /* Ефекти при наведенні */
 }
@@ -379,65 +394,65 @@ body {
 }
 .Pricing .price-card {
   width: 373px;
-  height: 524px;
+  height: 457px;
   max-width: 374px;
-  max-height: 524px;
+  max-height: 540px;
   background-color: rgba(74, 80, 79, 0.7254901961);
-  border-top-left-radius: 24px;
-  border-bottom-left-radius: 24px;
-  padding-top: 64px;
-  padding-right: 48px;
-  padding-bottom: 64px;
-  padding-left: 48px;
+  border-radius: 24px;
+  padding: 32px 48px;
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 0px;
   border: 2px solid transparent;
   transition: all 0.3s ease;
+  opacity: 1;
 }
 .Pricing .price-cardt {
   width: 373px;
-  height: 524px;
+  height: 457px;
   max-width: 374px;
   max-height: 524px;
   background-color: rgba(74, 80, 79, 0.7254901961);
   border-radius: 24px;
-  padding-top: 64px;
-  padding-right: 48px;
-  padding-bottom: 64px;
-  padding-left: 48px;
+  padding: 32px 48px;
+  margin: 0px 10px;
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 0px;
   border: 2px solid transparent;
   transition: all 0.3s ease;
+  opacity: 1;
 }
 .Pricing .price-cards {
   width: 373px;
-  height: 524px;
+  height: 457px;
   max-width: 374px;
   max-height: 524px;
   background-color: rgba(74, 80, 79, 0.7254901961);
-  border-top-right-radius: 24px;
-  border-bottom-right-radius: 24px;
-  padding-top: 64px;
-  padding-right: 48px;
-  padding-bottom: 64px;
-  padding-left: 48px;
+  border-radius: 24px;
+  padding: 32px 48px;
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 0px;
   border: 2px solid transparent;
   transition: all 0.3s ease;
+  opacity: 1;
 }
 .Pricing .prise-content {
   display: flex;
   flex-direction: column;
   width: 276px;
   height: 166px;
+}
+.Pricing .cont-head {
+  width: 242px;
+  height: 32px;
+  gap: 16px;
+  display: flex;
+  align-items: center;
 }
 .Pricing .plan-name {
   width: 99px;
@@ -448,6 +463,23 @@ body {
   line-height: 32px;
   letter-spacing: 0%;
   color: #fff;
+}
+.Pricing .label-popular {
+  display: inline-block;
+  background-color: #1e1e1e;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  width: 111px;
+  height: 16px;
+  gap: 5px;
+  border-radius: 4px;
 }
 .Pricing .plan-description {
   width: 254px;
@@ -460,13 +492,15 @@ body {
   letter-spacing: 0%;
   color: #8e8d8d;
 }
-.Pricing .rect {
-  width: 276;
-  height: 2;
+.Pricing .white-line {
+  width: 276px;
+  height: 2px;
+  background-color: white;
   opacity: 0.5;
+  margin: 20px 0px;
 }
 .Pricing .price {
-  width: 164px;
+  width: 184px;
   height: 48px;
   gap: 4px;
   font-size: 38px;
@@ -485,12 +519,11 @@ body {
 }
 .Pricing .features {
   width: 277px;
-  height: auto;
+  height: 104px;
   gap: 16px;
   list-style: none;
   padding: 0px;
-  margin: 0px;
-  flex-grow: 1;
+  margin: 40px 0px;
 }
 .Pricing .features li {
   margin-bottom: 15px;
@@ -524,6 +557,21 @@ body {
   background-color: #398378;
   border: 2px solid #fff;
 }
+.Pricing .price-cards:hover .btn_pr {
+  transform: scale(1.05) translateY(-10px);
+  background-color: #398378;
+  border: 2px solid #fff;
+}
+.Pricing .price-card:hover .btn_pr {
+  transform: scale(1.05) translateY(-10px);
+  background-color: #398378;
+  border: 2px solid #fff;
+}
+.Pricing .price-cardt:hover .btn_pr {
+  transform: scale(1.05) translateY(-10px);
+  background-color: #398378;
+  border: 2px solid #fff;
+}
 .Pricing .price-card:hover .plan-name,
 .Pricing .price-card:hover .plan-description,
 .Pricing .price-card:hover .price,
@@ -532,6 +580,12 @@ body {
   color: white;
 }
 .Pricing .price-card:hover .features li:before {
+  color: white;
+}
+.Pricing .price-cardt:hover .features li:before {
+  color: white;
+}
+.Pricing .price-cards:hover .features li:before {
   color: white;
 }
 .Pricing .price-card:hover .cta-button {
@@ -548,4 +602,43 @@ body {
     max-width: 400px;
     margin-bottom: 30px;
   }
+}
+
+.Aspect {
+  margin: 100px 135px;
+  position: relative;
+  width: 100%;
+  max-width: 1250px;
+  height: 1464px;
+}
+.Aspect_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1250px;
+  height: 188px;
+  margin-bottom: 60px;
+}
+.Aspect_description {
+  width: 890px;
+  height: 65px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32.04px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+  margin: 0px;
+}
+.Aspect_title {
+  padding: 0px 40px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0px;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+  margin: 15px;
 }

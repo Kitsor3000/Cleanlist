@@ -1,10 +1,12 @@
+@use '../components/button' as *; 
+
 .Pricing{
 
     margin: 100px 135px;
     position: absolute;
       width: 100%;
     max-width: 1250px;
-      height: 1036px;
+      height: 800px;
  
   
       &_content{
@@ -65,62 +67,50 @@
     
     .price-card {
         width: 373px;
-        height: 524px;
-            max-width: 374px;
-            max-height: 524px;
-        background-color:  #4a504fb9;
-        border-top-left-radius: 24px;
-border-bottom-left-radius: 24px;
-padding-top: 64px;
-padding-right: 48px;
-padding-bottom: 64px;
-padding-left: 48px;
- 
+        height: 457px;
+        max-width: 374px;
+        max-height: 540px;
+        background-color: #4a504fb9;
+        border-radius: 24px;
+        padding: 32px 48px;
         position: relative;
         display: flex;
         flex-direction: column;
-gap: 0px;
-border: 2px solid transparent;
-transition: all 0.3s ease;
-
-
-    }
+        gap: 0px;
+        border: 2px solid transparent;
+        transition: all 0.3s ease;
+        opacity: 1;
+      }
     
     .price-cardt {
         width: 373px;
-        height: 524px;
+        height: 457px;
             max-width: 374px;
             max-height: 524px;
         background-color:  #4a504fb9;
        border-radius: 24px;
-padding-top: 64px;
-padding-right: 48px;
-padding-bottom: 64px;
-padding-left: 48px;
-       
+       padding: 32px 48px;
+       margin: 0px 10px;
         position: relative;
         display: flex;
         flex-direction: column;
 gap: 0px;
 border: 2px solid transparent;
 transition: all 0.3s ease;
-
+opacity: 1;
 
 
     }
 
     .price-cards {
         width: 373px;
-        height: 524px;
+        height: 457px;
             max-width: 374px;
             max-height: 524px;
         background-color:  #4a504fb9;
-        border-top-right-radius: 24px;
-        border-bottom-right-radius: 24px;
-padding-top: 64px;
-padding-right: 48px;
-padding-bottom: 64px;
-padding-left: 48px;
+        border-radius: 24px;
+        
+        padding: 32px 48px;
         
         position: relative;
         display: flex;
@@ -128,7 +118,7 @@ padding-left: 48px;
 gap: 0px;
 border: 2px solid transparent;
 transition: all 0.3s ease;
-
+opacity: 1;
 
 
 
@@ -144,7 +134,14 @@ transition: all 0.3s ease;
 
     }
 
-    /* Заголовок тарифу */
+    .cont-head{
+        width: 242px;
+       height: 32px;
+       gap: 16px;
+       display: flex;
+       align-items: center; 
+    }
+    
     .plan-name {
         width: 99px;
 height: 32px;
@@ -155,6 +152,28 @@ line-height: 32px;
 letter-spacing: 0%;
         color: #fff;
     }
+
+    .label-popular {
+        display: inline-block;
+        background-color: #1e1e1e; 
+        color: white;
+        font-weight: bold;
+        font-size: 12px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: 'Arial', sans-serif;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+
+        width: 111px;
+      height: 16px;
+      gap: 5px;
+      
+border-radius: 4px;
+
+      }
+      
     
     
     .plan-description {
@@ -171,17 +190,20 @@ color: #8e8d8d;
 
     }
 
-    .rect{
-        width: 276;
-    height: 2;
-    opacity: 0.5;
-    }
+    .white-line {
+        width: 276px;
+        height: 2px;
+        background-color: white;
+        opacity: 0.5;
+        margin: 20px 0px;
+      }
+      
 
 
     
     
     .price {
-        width: 164px;
+        width: 184px;
         height: 48px;
         gap: 4px;
         font-size:38px;
@@ -208,12 +230,12 @@ color: #fff;
     /* Список функцій */
     .features {
         width: 277px;
-        height: auto;
+        height: 104px;
         gap: 16px;
         list-style: none;
         padding: 0px;
-        margin: 0px;
-        flex-grow: 1;
+        margin: 40px 0px;
+        
     }
     
     .features li {
@@ -245,18 +267,42 @@ color: #fff;
         transform: scale(1.05) translateY(-10px);
         background-color: #398378;
         border: 2px solid #fff;
+       
     }
 
     .price-cardt:hover {
         transform: scale(1.05) translateY(-10px);
         background-color: #398378;
         border: 2px solid #fff;
+        
     }
 
-    .price-cards:hover {
+    .price-cards:hover  {
         transform: scale(1.05) translateY(-10px);
         background-color: #398378;
         border: 2px solid #fff;
+        
+    }
+
+    .price-cards:hover .btn_pr {
+        transform: scale(1.05) translateY(-10px);
+        background-color: #398378;
+        border: 2px solid #fff;
+        
+    }
+
+    .price-card:hover .btn_pr {
+        transform: scale(1.05) translateY(-10px);
+        background-color: #398378;
+        border: 2px solid #fff;
+        
+    }
+
+    .price-cardt:hover .btn_pr {
+        transform: scale(1.05) translateY(-10px);
+        background-color: #398378;
+        border: 2px solid #fff;
+        
     }
     
     .price-card:hover .plan-name,
@@ -268,6 +314,13 @@ color: #fff;
     }
     
     .price-card:hover .features li:before {
+        color: white;
+    }
+
+    .price-cardt:hover .features li:before {
+        color: white;
+    }
+    .price-cards:hover .features li:before {
         color: white;
     }
     
