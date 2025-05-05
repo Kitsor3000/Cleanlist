@@ -214,11 +214,11 @@ body {
 }
 
 .Features {
-  margin: 0 135px;
+  margin: 100px 135px;
   position: relative;
   width: 100%;
   max-width: 1255px;
-  height: 870px;
+  height: 670px;
   gap: 30px;
 }
 .Features .containerf {
@@ -256,4 +256,73 @@ body {
   background-repeat: no-repeat;
   background-size: 507px 782px;
   z-index: -1000;
+}
+.Features .cards-row {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 50%;
+}
+.Features .cards-container {
+  position: relative;
+  left: 400px;
+  display: flex;
+  flex-direction: row;
+  width: 750px;
+  height: 670px;
+  gap: 32px;
+}
+.Features .card {
+  width: 370px;
+  height: 202px;
+  gap: 30px;
+  border-radius: 22px;
+  padding: 30px;
+  background-color: rgba(74, 80, 79, 0.7254901961);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.Features .card-title {
+  font-weight: 700px;
+  font-size: 24px;
+  line-height: 31.92px;
+  letter-spacing: 0%;
+  color: white;
+  vertical-align: middle;
+  margin: 0px;
+}
+.Features .card-description {
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  padding: 0px 13px;
+  margin: 0px;
+}
+.Features .photo-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.Features .header-icon {
+  display: flex;
+  width: 64;
+  height: 64;
+  gap: 10px;
+  border-radius: 12px;
+  background-color: #398378;
+  margin: 13px;
+  transition: all 0.3s ease;
+  filter: invert(0%) brightness(100%);
+}
+.Features .card:hover .header-icon {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(0deg) brightness(150%);
+  border-color: white;
+}
+.Features .card:hover {
+  background-color: #398378;
 }
