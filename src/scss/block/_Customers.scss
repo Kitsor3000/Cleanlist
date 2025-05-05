@@ -1,0 +1,63 @@
+
+.Customers{
+    position: relative;
+    width: 100%;
+    max-width: 1250px;
+      height: 200px;
+      background-color: #2e3231b9;
+      padding: 100px 135px;
+      
+  
+  
+      &_content{
+          
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      width: 1250px;
+      height: 227px;
+      padding: 0px;
+      
+      
+  
+      }
+  
+      &_title{
+        
+        padding: 0px 40px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+        letter-spacing: 0px;
+        text-align: center;
+        vertical-align: middle;
+          color:#fff
+      }
+  
+  
+  
+      .icon-container {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 84px; 
+        width: 100%;
+        max-width: 1170px; 
+        height: 80px;
+        
+      
+      }
+      
+      .provider-item {
+        flex: 0 0 auto;
+        flex: 1;
+       text-align: center; 
+    }
+  
+      
+  
+  
+  
+  }
