@@ -1,13 +1,13 @@
 @charset "UTF-8";
 .header {
   width: 100%;
-  max-width: 1170px;
+  max-width: 1255px;
   height: 104px;
   margin: 0 135px;
 }
 .header_nav {
   position: absolute;
-  left: 550px;
+  left: 600px;
 }
 .header_container {
   display: flex;
@@ -24,7 +24,7 @@ body {
 }
 
 .wrapper {
-  max-width: 1440px;
+  max-width: 1520px;
 }
 
 .nav-list {
@@ -48,8 +48,9 @@ body {
 }
 
 .hero {
+  position: relative;
   width: 100%;
-  max-width: 1305px;
+  max-width: 1255px;
   height: 691px;
   margin: 0 135px;
 }
@@ -76,8 +77,7 @@ body {
 }
 .hero .container {
   position: absolute;
-  top: 235px;
-  left: 135px;
+  top: 120px;
 }
 .hero .green-dash-line {
   display: inline-block;
@@ -173,21 +173,21 @@ body {
 }
 
 .Integration {
+  position: relative;
   width: 100%;
-  max-width: 1305px;
+  max-width: 1520px;
   height: 427px;
-  margin: 0 135px;
 }
 .Integration_content {
   display: flex;
-  width: 1170px;
-  height: 227px;
-  text-align: center;
+  flex-direction: column;
   align-items: center;
+  width: 1250px;
+  height: 227px;
+  padding: 100px 135px;
 }
 .Integration_title {
   padding: 0px 40px;
-  font-family: Inter;
   font-weight: 700;
   font-size: 40px;
   line-height: 50px;
@@ -217,7 +217,7 @@ body {
   margin: 0 135px;
   position: relative;
   width: 100%;
-  max-width: 1305px;
+  max-width: 1255px;
   height: 870px;
   gap: 30px;
 }
@@ -245,4 +245,15 @@ body {
   letter-spacing: 0%;
   vertical-align: middle;
   color: #fff;
+}
+.Features_foto {
+  position: absolute;
+  height: 782px;
+  width: 507px;
+  top: 1360px;
+  left: 0px;
+  background-image: url("../img/Pattern.png");
+  background-repeat: no-repeat;
+  background-size: 507px 782px;
+  z-index: -1000;
 }

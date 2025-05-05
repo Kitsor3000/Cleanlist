@@ -1,18 +1,21 @@
 
 .Integration{
-    
-    width: 100%;
-  max-width: 1305px;
+  position: relative;
+  width: 100%;
+  max-width: 1520px;
     height: 427px;
-    margin: 0 135px;
+    
+    
+
 
     &_content{
         
       display: flex;
-    width: 1170px;
+      flex-direction: column;
+      align-items: center;
+    width: 1250px;
     height: 227px;
-    text-align: center;
-    align-items: center;
+    padding: 100px 135px;
     
     
 
@@ -21,7 +24,6 @@
     &_title{
       
       padding: 0px 40px;
-      font-family: Inter;
       font-weight: 700;
       font-size: 40px;
       line-height: 50px;
