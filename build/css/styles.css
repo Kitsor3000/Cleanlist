@@ -147,6 +147,7 @@ main {
   background-color: transparent;
   border: 2px solid white;
   color: white;
+  z-index: 5;
 }
 .btn_demo:hover {
   color: #398378;
@@ -884,4 +885,142 @@ main {
   flex: 0 0 auto;
   flex: 1;
   text-align: center;
+}
+
+.CTA {
+  position: relative;
+  width: 100%;
+  max-width: 1250px;
+  height: 175px;
+  padding: 100px 135px;
+  z-index: 2;
+}
+.CTA_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 1250px;
+  height: 175px;
+  background-color: #398378;
+  padding: 0px;
+  z-index: 3;
+  overflow: hidden;
+}
+.CTA_title {
+  margin: 0px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  color: #fff;
+}
+.CTA .contentcta {
+  width: 150px;
+  height: 40px;
+  margin: 65px 60px;
+  z-index: 5;
+}
+.CTA .contentctaT {
+  width: 406px;
+  height: 71px;
+  margin: 65px 60px;
+}
+.CTA .cT {
+  width: 1250px;
+  height: 175px;
+  margin: 0px;
+  overflow: hidden;
+}
+.CTA .white-linecta {
+  width: 45px;
+  height: 3px;
+  background-color: #fff;
+  margin: 10px 0px;
+}
+.CTA .overlay-circle {
+  position: absolute;
+  top: -130px;
+  right: -50px;
+  width: 528px;
+  height: 585px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+footer {
+  height: 221px;
+  color: #fff;
+  padding: 0px 135px;
+  width: 100%;
+  max-width: 1250px;
+}
+footer .top-bar {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  display: flex;
+  height: 23px;
+  justify-content: space-between;
+  padding: 20px;
+}
+footer .menu {
+  list-style: none;
+  display: flex;
+  gap: 42px;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 33px 0;
+  margin: 30px 0;
+}
+footer .footer-section {
+  flex: 1;
+  padding: 0 20px;
+}
+footer .footer-section h2 {
+  color: #30a691;
+  margin-bottom: 10px;
+}
+footer .footer-section h3 {
+  color: #30a691;
+  margin-bottom: 20px;
+}
+footer .footer-section i {
+  margin-right: 8px;
+  color: #30a691;
+}
+footer .bottom-bar {
+  border-top: 1px solid #fff;
+  text-align: center;
+  padding: 14px 0px;
+  font-size: 16px;
+  color: #fff;
+}
+footer .photo-headf {
+  display: flex;
+  align-items: center;
+  height: 55px;
+  width: 193px;
+  gap: 10px;
+}
+footer .header-iconf {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  gap: 10px;
+  margin: 0px;
+}
+footer .pf {
+  width: 140px;
+  height: 60px;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
 }

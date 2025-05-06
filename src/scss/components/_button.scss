@@ -17,7 +17,7 @@
       background-color: transparent;
       border: 2px solid white;
       color: white;
-      
+      z-index: 5;
       &:hover {
        
         color:  #398378;
@@ -49,6 +49,8 @@
       border-radius: 8px;
   
       }
+
+      
 
       &:hover{
         
